@@ -11,6 +11,8 @@
 		B5F28BE425E4DF160061A16E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F28BE325E4DF160061A16E /* ContentView.swift */; };
 		B5F28BE625E4DF170061A16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F28BE525E4DF170061A16E /* Assets.xcassets */; };
 		B5F28BE925E4DF170061A16E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F28BE825E4DF170061A16E /* Preview Assets.xcassets */; };
+		B5F28BF325E4E0150061A16E /* FileExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F28BF225E4E0150061A16E /* FileExplorer.swift */; };
+		B5F28BF625E4E01D0061A16E /* ToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F28BF525E4E01D0061A16E /* ToJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		B5F28BE825E4DF170061A16E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5F28BEA25E4DF170061A16E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F28BEB25E4DF170061A16E /* MLFormatHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MLFormatHelper.entitlements; sourceTree = "<group>"; };
+		B5F28BF225E4E0150061A16E /* FileExplorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileExplorer.swift; sourceTree = "<group>"; };
+		B5F28BF525E4E01D0061A16E /* ToJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				B5F28BE125E4DF160061A16E /* MLFormatHelperApp.swift */,
+				B5F28BF525E4E01D0061A16E /* ToJson.swift */,
+				B5F28BF225E4E0150061A16E /* FileExplorer.swift */,
 				B5F28BE325E4DF160061A16E /* ContentView.swift */,
 				B5F28BE525E4DF170061A16E /* Assets.xcassets */,
 				B5F28BEA25E4DF170061A16E /* Info.plist */,
@@ -140,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F28BF625E4E01D0061A16E /* ToJson.swift in Sources */,
 				B5F28BE425E4DF160061A16E /* ContentView.swift in Sources */,
+				B5F28BF325E4E0150061A16E /* FileExplorer.swift in Sources */,
 				B5F28BE225E4DF160061A16E /* MLFormatHelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
