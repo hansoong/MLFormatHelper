@@ -64,14 +64,8 @@ class ToJson {
             encoding: String.Encoding.utf8)
         {
             print("JSON string = \n\(theJSONText)")
-            let filename = "annotation.json"
-            
-            //if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-
-            let downloadURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
-            let toFileURL = downloadURL.appendingPathComponent(filename)
-            //let toFileURL = fromFileUrl.deletingLastPathComponent().appendingPathComponent(filename)
-                print("\(toFileURL)")
+            let toFileURL = fromFileURL
+            print("\(toFileURL) updated!" )
                 //writing
                 do {
                     try theJSONText.write(to: toFileURL, atomically: true, encoding: String.Encoding.utf8)
@@ -86,3 +80,9 @@ class ToJson {
         }
     }
 }
+
+//let filename = "annotation.json"
+//if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//let downloadURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
+//let toFileURL = downloadURL.appendingPathComponent(filename)
+//let toFileURL = fromFileUrl.deletingLastPathComponent().appendingPathComponent(filename)
