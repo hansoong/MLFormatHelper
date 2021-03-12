@@ -1,9 +1,3 @@
-//
-//  MLFormatHelperApp.swift
-//  MLFormatHelper
-//
-//  Created by Choong Han Soong on 23/2/21.
-//
 
 import SwiftUI
 

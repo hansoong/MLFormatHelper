@@ -22,26 +22,29 @@ class ToJson {
                             jsonItem["images"] = (asset["name"] as! String)
                             
                             var annotations = [[String:Any]]()
-                            var annotationItem = [String:Any]()
                             
-                            let region = regions.first as! [String:Any]
-                            let labels = region["tags"] as! [String]
-                            annotationItem["label"] = labels.first
-                            
-                            let boundingBox = region["boundingBox"] as! [String:Double]
-                            let left = boundingBox["left"]!
-                            let top = boundingBox["top"]!
-                            let width = boundingBox["width"]!
-                            let height = boundingBox["height"]!
-                            
-                            annotationItem["coordinates"] = [
-                                "x" : Int(left + width / 2),
-                                "y" : Int(top + height / 2),
-                                "width" : Int(width),
-                                "height" : Int(height)
-                            ]
-                            
-                            annotations.append(annotationItem)
+                            for item in regions {
+                                var annotationItem = [String:Any]()
+                                
+                                let region = item as! [String:Any]
+                                let labels = region["tags"] as! [String]
+                                annotationItem["label"] = labels.first
+                                
+                                let boundingBox = region["boundingBox"] as! [String:Double]
+                                let left = boundingBox["left"]!
+                                let top = boundingBox["top"]!
+                                let width = boundingBox["width"]!
+                                let height = boundingBox["height"]!
+                                
+                                annotationItem["coordinates"] = [
+                                    "x" : Int(left + width / 2),
+                                    "y" : Int(top + height / 2),
+                                    "width" : Int(width),
+                                    "height" : Int(height)
+                                ]
+                                
+                                annotations.append(annotationItem)
+                            }
                             jsonItem["annotation"] = annotations
                             
                             toJson.append(jsonItem)
